@@ -90,7 +90,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 const char     CRYPTONOTE_NAME[]                             = "soldi";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001a7a4b0e4b145029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101a6f0f24020cf0bb7747cb2a1da0e0523a66c43fda760175451112ffd0a9daa50";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
@@ -103,8 +103,8 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by def
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  128;    //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
-const int      P2P_DEFAULT_PORT                              =  31280;
-const int      RPC_DEFAULT_PORT                              =  31281;
+const int      P2P_DEFAULT_PORT                              =  51280;
+const int      RPC_DEFAULT_PORT                              =  51281;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
@@ -119,13 +119,13 @@ const uint32_t P2P_DEFAULT_CONNECTION_TIMEOUT                = 5000;          //
 const uint32_t P2P_DEFAULT_PING_CONNECTION_TIMEOUT           = 2000;          // 2 seconds
 const uint64_t P2P_DEFAULT_INVOKE_TIMEOUT                    = 60 * 2 * 1000; // 2 minutes
 const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          // 5 seconds
-const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "3a96y6a8u964i8p1640o55336858dobuio8c668pe635poe365u8i84d085pa210";
+const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "3a96y6a8u557i8p1640o55336858doyuio8c668pe635pui365u8i84d085pa210";
 
 const char* const SEED_NODES[] = { 
-  "212.237.7.129:31280",
-  "94.177.187.216:31280",
-  "80.211.225.136:31280",
-  "212.237.29.222:31280"
+  "80.211.191.90:51280",
+  "94.177.187.216:51280",
+  "80.211.225.136:51280",
+  "212.237.29.222:51280"
 };
 
 struct CheckpointData {
