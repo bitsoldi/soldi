@@ -23,11 +23,11 @@
 namespace CryptoNote {
 namespace parameters {
   
-const uint64_t DIFFICULTY_TARGET                             = 60; // seconds
+const uint64_t DIFFICULTY_TARGET                             = 240; // seconds
 const uint64_t CRYPTONOTE_MAX_BLOCK_NUMBER                   = 500000000;
 const size_t   CRYPTONOTE_MAX_BLOCK_BLOB_SIZE                = 500000000;
 const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 150; // addresses start with "S6"
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 153; // addresses start with "Sb"
 const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 10;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = DIFFICULTY_TARGET * 7;
 
@@ -37,7 +37,7 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 const uint64_t MONEY_SUPPLY                                  = UINT64_C(10000000000000000000);
 const uint64_t TAIL_EMISSION_REWARD                          = UINT64_C(1000000000000);
 const size_t CRYPTONOTE_COIN_VERSION                         = 1;
-const unsigned EMISSION_SPEED_FACTOR                         = 22;
+const unsigned EMISSION_SPEED_FACTOR                         = 20;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
@@ -92,7 +92,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 } // parameters
 
 const char     CRYPTONOTE_NAME[]                             = "soldi";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001a7a4b0e4b145029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121019be6660e9ec24db4bbbe79a875732a80d1c5141833824520dbf44c08e4df1746";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
@@ -105,8 +105,8 @@ const size_t   BLOCKS_IDS_SYNCHRONIZING_DEFAULT_COUNT        =  10000;  //by def
 const size_t   BLOCKS_SYNCHRONIZING_DEFAULT_COUNT            =  128;    //by default, blocks count in blocks downloading
 const size_t   COMMAND_RPC_GET_BLOCKS_FAST_MAX_COUNT         =  1000;
 
-const int      P2P_DEFAULT_PORT                              =  51280;
-const int      RPC_DEFAULT_PORT                              =  51281;
+const int      P2P_DEFAULT_PORT                              =  52280;
+const int      RPC_DEFAULT_PORT                              =  52281;
 
 const size_t   P2P_LOCAL_WHITE_PEERLIST_LIMIT                =  1000;
 const size_t   P2P_LOCAL_GRAY_PEERLIST_LIMIT                 =  5000;
@@ -124,10 +124,10 @@ const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          //
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "3a96y6a8u557i8p1640o55336858doyuio8c668pe635pui365u8i84d085pa210";
 
 const char* const SEED_NODES[] = { 
-  "80.211.191.90:51280",
-  "94.177.187.216:51280",
-  "80.211.225.136:51280",
-  "212.237.29.222:51280"
+  "80.211.191.90:52280",
+  "94.177.187.216:52280",
+  "80.211.225.136:52280",
+  "212.237.29.222:52280"
 };
 
 struct CheckpointData {
